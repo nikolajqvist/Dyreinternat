@@ -1,7 +1,7 @@
 ﻿namespace Dyreinternat.wwwroot.Models
 {
-    public class Animal
+    public class Dog
     {
-
+        
     }
 }
