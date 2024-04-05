@@ -1,16 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace Dyreinternat.Pages
+﻿namespace Dyreinternat.wwwroot.Models
 {
-    public class AnimalOwnerModel : PageModel
+    public class AnimalOwner
     {
         private string _ownerName;
         private int _age;
         private int _id;
         private bool _newOwner;
 
-        public AnimalOwnerModel(string ownerName, int age, int id)
+        public AnimalOwner(string ownerName, int age, int id)
         {
             _ownerName = OwnerName;
             _age = Age;
@@ -22,8 +19,5 @@ namespace Dyreinternat.Pages
         public int Age { get => _age; set => _age = value; }
         public int Id { get => _id; set => _id = value; }
         public bool NewOwner { get => _newOwner; set => _newOwner = value; }
-        public void OnGet()
-        {
-        }
     }
 }
